@@ -16,6 +16,7 @@ const app = http.createServer((request, response) => {
   response.setHeader("Content-Type", "text/html");
   response.write("<h1>Hello everyone !</h1>");
   response.write("<h2>I am learning NodeJS</h2>");
+  response.write("<h2>Have fun!</h2>");
   response.write(
     "<h3>My web page has been deployed to Heroku successfully !</h3>"
   );
