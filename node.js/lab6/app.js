@@ -12,8 +12,15 @@ app.set("view engine", "hbs")
 //render ra trang home (index.hbs)
 //get: get method
 app.get("/", (req, res) => {
-    res.render("index");
+    let name = "Greenwich University";
+    let address = "2 Pham Van Bach";
+    res.render("index", { n: name, a: address });
 });
+
+app.get("/city", (req, res) => {
+    let cities = ["Ha Noi", "HCM city", "Da Nang", "Can Tho"]
+    res.render("city", { country : "VietNam", cities: cities})
+})
 
 //chạy web server
 app.listen(port, () => {
