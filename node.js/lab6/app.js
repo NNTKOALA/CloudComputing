@@ -12,7 +12,7 @@ app.set("view engine", "hbs")
 //render ra trang home (index.hbs)
 //get: get method
 app.get("/", (req, res) => {
-    app.render("index");
+    res.render("index");
 });
 
 //chạy web server
