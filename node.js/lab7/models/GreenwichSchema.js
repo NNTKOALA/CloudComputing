@@ -6,6 +6,6 @@ const GreenwichSchema = mogoose.GreenwichSchema({
     teacher: String
 });
 
-var GreenwichModel = mogoose.model("mobile", GreenwichSchema, "mobile")
+var GreenwichModel = mogoose.model("mobile", GreenwichSchema, "greenwich")
 
 module.exports = GreenwichModel
